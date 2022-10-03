@@ -1,0 +1,36 @@
+.top-artist-page-container {
+  p {
+    color: white;
+  }
+}
+
+.top-artist-nav {
+  @include flex-column();
+  align-items: center;
+  .top-artist-page-title {
+    margin: 70px 0 30px 0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.top-artist-filter {
+  @include flex-center();
+  justify-content: center;
+  p {
+    margin: 0 10px;
+  }
+}
+
+.artist-grid {
+  .bio-pic {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 25px;
+  }
+  .artist-page {
+    @include flex-column();
+    align-items: center;
+  }
+}
