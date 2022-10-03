@@ -1,6 +1,5 @@
 .header-container {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
   align-items: center;
   padding: 40px 0;
   img {
@@ -8,19 +7,18 @@
     width: 70px;
     margin-bottom: 60px;
   }
-  width: 200px;
+  width: 130px;
   height: 100vh;
-  background-color: rgb(33, 33, 33);
+  background-color: black;
   position: fixed;
 }
 
 .nav-links {
   color: rgb(201, 201, 201);
   li {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 30px 0;
     cursor: pointer;

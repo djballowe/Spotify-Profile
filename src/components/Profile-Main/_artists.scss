@@ -1,0 +1,39 @@
+.top-artists-container {
+  p {
+    color: white;
+  }
+}
+
+.top-artist-title {
+  margin: 80px 0 30px 0;
+  @include flex-center();
+  justify-content: space-between;
+  p {
+    font-weight: 600;
+  }
+  button {
+    height: 30px;
+    width: 80px;
+    border: $green 1px solid;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.artist {
+  margin: 20px 0;
+  @include flex-center();
+  cursor: pointer;
+  .artist-pic {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 25px;
+  }
+  p {
+    margin-left: 20px;
+  }
+}

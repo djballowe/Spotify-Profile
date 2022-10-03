@@ -1,0 +1,60 @@
+.profile-info-container {
+  margin-top: 50px;
+  @include flex-column();
+  align-items: center;
+  p {
+    color: white;
+  }
+}
+
+.main-info {
+  @include flex-column();
+  align-items: center;
+  text-align: center;
+  p {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.profile-stats-container {
+  margin: 20px 0;
+  @include flex-center();
+  .profile-stats {
+    p:nth-of-type(1) {
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: rgb(113, 113, 113);
+    }
+    p:nth-of-type(2) {
+      color: $green;
+      font-weight: 700;
+      margin-top: 5px;
+    }
+    text-align: center;
+    &:nth-of-type(2) {
+      margin: 0 20px;
+    }
+  }
+}
+
+.log-out {
+  button {
+    margin-top: 20px;
+    height: 40px;
+    width: 150px;
+    background-color: $green;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
