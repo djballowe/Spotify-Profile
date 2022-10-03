@@ -1,0 +1,28 @@
+.mobile-nav-container {
+  z-index: 100;
+  width: calc(100vw - 40px);
+  bottom: 0;
+  position: fixed;
+  background-color: black;
+  padding: 20px;
+  @include flex-center();
+  justify-content: space-between;
+  color: rgb(164, 164, 164);
+  .nav-mobiles {
+    position: relative;
+    p {
+      font-size: 0.8rem;
+    }
+    @include flex-column();
+    align-items: center;
+  }
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $green;
+  width: 75px;
+  height: 5px;
+}

@@ -68,6 +68,37 @@
   cursor: pointer;
 }
 
+.mobile-nav-container {
+  z-index: 100;
+  width: calc(100vw - 40px);
+  bottom: 0;
+  position: fixed;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(164, 164, 164);
+}
+.mobile-nav-container .nav-mobiles {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-nav-container .nav-mobiles p {
+  font-size: 0.8rem;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(30, 215, 96);
+  width: 75px;
+  height: 5px;
+}
+
 .profile-info-container {
   margin-top: 50px;
   display: flex;
@@ -107,7 +138,7 @@
 .profile-stats-container .profile-stats p:nth-of-type(1) {
   font-weight: 700;
   font-size: 0.8rem;
-  color: rgb(113, 113, 113);
+  color: rgb(164, 164, 164);
 }
 .profile-stats-container .profile-stats p:nth-of-type(2) {
   color: rgb(30, 215, 96);
@@ -173,6 +204,7 @@
 .home-container {
   margin: auto;
   width: 90%;
+  margin-bottom: 130px;
 }
 
 .top-songs-container p {
