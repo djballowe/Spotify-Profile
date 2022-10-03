@@ -13,15 +13,15 @@ const Header = () => {
       <img src={spotify} alt="" />
       <ul className="nav-links">
         <li>
-          <Home path={mdiHomeVariantOutline} size={1.7} /> Home
+          <Home path={mdiHomeVariantOutline} size={1.4} /> Home
         </li>
         <li>
           {" "}
-          <Artist path={mdiAccountMusicOutline} size={1.7} /> Top Artists
+          <Artist path={mdiAccountMusicOutline} size={1.4} /> Top Artists
         </li>
         <li>
           {" "}
-          <List path={mdiPlaylistMusicOutline} size={1.7} /> Top Tracks
+          <List path={mdiPlaylistMusicOutline} size={1.4} /> Top Tracks
         </li>
       </ul>
     </div>

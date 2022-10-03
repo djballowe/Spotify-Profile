@@ -1,8 +1,23 @@
+$green: rgba(30, 215, 96, 255);
+$off-black: rgb(33, 33, 33);
+
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+}
+
 @import "./components/login/login";
 @import "./components/nav/header";
+@import "./components/nav/mobileheader";
+@import "./components/Profile/profile";
 
 body {
-  background-color: black;
+  background-color: $off-black;
   font-family: "Inter Tight", sans-serif;
 }
 
