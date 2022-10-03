@@ -1,0 +1,50 @@
+.top-songs-container {
+  p {
+    color: white;
+  }
+}
+
+.top-songs-title {
+  @include flex-center();
+  justify-content: space-between;
+  margin: 80px 0 30px 0;
+  p {
+    font-weight: 600;
+  }
+  button {
+    height: 30px;
+    width: 80px;
+    border: $green 1px solid;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.song {
+  @include flex-center();
+  justify-content: space-between;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.album-cover {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.song-details-container {
+  @include flex-center();
+}
+
+.song-details {
+  p:nth-of-type(2) {
+    font-size: 0.9rem;
+    color: $word-black;
+  }
+}

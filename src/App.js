@@ -1,8 +1,10 @@
 import Login from "./components/login/Login";
 import Header from "./components/nav/Header";
-import Profile from "./components/Profile/Profile";
+import Profile from "./components/Profile-Main/Profile";
 import "./App.css";
 import MobileHeader from "./components/nav/MobileHeader";
+import Artists from "./components/Profile-Main/Artists";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       {/* <Header /> */}
       <MobileHeader />
       {/* <Login /> */}
-      <Profile />
+      <Home />
     </div>
   );
 }

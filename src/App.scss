@@ -1,5 +1,6 @@
 $green: rgba(30, 215, 96, 255);
 $off-black: rgb(33, 33, 33);
+$word-black: rgb(113, 113, 113);
 
 @mixin flex-column() {
   display: flex;
@@ -14,7 +15,10 @@ $off-black: rgb(33, 33, 33);
 @import "./components/login/login";
 @import "./components/nav/header";
 @import "./components/nav/mobileheader";
-@import "./components/Profile/profile";
+@import "./components/Profile-Main/profile";
+@import "./components/Profile-Main/artists";
+@import "./components/Home/home";
+@import "./components/Profile-Main/songs";
 
 body {
   background-color: $off-black;
