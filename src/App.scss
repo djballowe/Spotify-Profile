@@ -19,6 +19,8 @@ $word-black: rgb(113, 113, 113);
 @import "./components/Profile-Main/artists";
 @import "./components/Home/home";
 @import "./components/Profile-Main/songs";
+@import "./components/Top\ Artists/topartists";
+@import "./components/Top\ Tracks/toptracks";
 
 body {
   background-color: $off-black;

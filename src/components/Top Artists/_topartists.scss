@@ -1,0 +1,44 @@
+.top-artist-page-container {
+  p {
+    color: white;
+  }
+}
+
+.top-artist-nav {
+  @include flex-column();
+  align-items: center;
+  .top-artist-page-title {
+    margin: 70px 0 30px 0;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+}
+
+.top-artist-filter {
+  @include flex-center();
+  justify-content: center;
+  p {
+    margin: 0 10px;
+  }
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 50px 0 100px 0;
+  .bio-pic {
+    height: 125px;
+    width: 125px;
+    background-color: white;
+    border-radius: 100px;
+  }
+  .artist-page {
+    @include flex-column();
+    align-items: center;
+    p {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+  }
+}

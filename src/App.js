@@ -5,14 +5,18 @@ import "./App.css";
 import MobileHeader from "./components/nav/MobileHeader";
 import Artists from "./components/Profile-Main/Artists";
 import Home from "./components/Home/Home";
+import TopArtists from "./components/Top Artists/TopArtists";
+import TopTracks from "./components/Top Tracks/TopTracks";
 
 function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <MobileHeader />
       {/* <Login /> */}
-      <Home />
+      <MobileHeader />
+      {/* <Home /> */}
+      {/* <TopArtists /> */}
+      <TopTracks />
     </div>
   );
 }
