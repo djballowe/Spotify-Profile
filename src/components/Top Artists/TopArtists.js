@@ -18,6 +18,30 @@ const TopArtists = () => {
           <div className="bio-pic"></div>
           <p>Artist</p>
         </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
+        <div className="artist-page">
+          <div className="bio-pic"></div>
+          <p>Artist</p>
+        </div>
       </div>
     </div>
   );

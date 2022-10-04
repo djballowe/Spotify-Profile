@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       {/* <Header /> */}
       {/* <Login /> */}
-      {/* <MobileHeader />
-      <Home /> */}
+      <MobileHeader />
+      {/* <Home /> */}
       <TopArtists />
     </div>
   );
