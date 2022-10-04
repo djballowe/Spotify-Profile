@@ -7,6 +7,7 @@ import Artists from "./components/Profile-Main/Artists";
 import Home from "./components/Home/Home";
 import TopArtists from "./components/Top Artists/TopArtists";
 import TopTracks from "./components/Top Tracks/TopTracks";
+import TrackDetails from "./components/Details/TrackDetails";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <MobileHeader />
       {/* <Home /> */}
       {/* <TopArtists /> */}
-      <TopTracks />
+      {/* <TopTracks /> */}
+      <TrackDetails />
     </div>
   );
 }

@@ -318,6 +318,64 @@
   margin-bottom: 100px;
 }
 
+.song_details_container {
+  margin: 50px 0 100px 0;
+}
+
+.album_year {
+  color: rgb(113, 113, 113);
+  font-size: 1rem;
+}
+
+.song_details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.song_details .album_cover {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
+.song_details p {
+  color: white;
+}
+.song_details .song_title p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.song_details button {
+  margin-top: 20px;
+  height: 40px;
+  width: 200px;
+  background-color: rgb(30, 215, 96);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.album_year {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 5px 0;
+}
+.album_year .divider {
+  background-color: rgb(113, 113, 113);
+  height: 3px;
+  width: 3px;
+  border-radius: 10px;
+  margin: 0 5px 0 5px;
+}
+.album_year p {
+  color: rgb(113, 113, 113);
+}
+
 body {
   background-color: rgb(33, 33, 33);
   font-family: "Inter Tight", sans-serif;
