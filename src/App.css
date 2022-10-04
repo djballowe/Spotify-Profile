@@ -257,6 +257,10 @@
   color: rgb(113, 113, 113);
 }
 
+.time {
+  color: rgb(113, 113, 113);
+}
+
 .top-artist-page-container p {
   color: white;
 }
@@ -301,6 +305,17 @@
 .artist-grid .artist-page p {
   margin-top: 10px;
   font-weight: 600;
+}
+
+.top-tracks-page-container {
+  margin: auto;
+  width: 90%;
+  color: white;
+}
+
+.top-tracks-list {
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 body {
