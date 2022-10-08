@@ -100,7 +100,7 @@ const Header = () => {
               opacity: page === "/recent" ? "1" : "0",
             }}
           ></div>
-          <Clock path={mdiClockOutline} size={1.4} /> Top Tracks
+          <Clock path={mdiClockOutline} size={1.4} /> Recent
         </li>
       </ul>
     </div>
