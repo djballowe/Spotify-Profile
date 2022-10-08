@@ -1,11 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Songs = () => {
+  let navigate = useNavigate();
+
   return (
     <div className="top-songs-container">
       <div className="top-songs-title">
         <p>Top Songs of All Time</p>
-        <button>Details</button>
+        <button
+          onClick={() => {
+            navigate("tracks");
+          }}
+        >
+          Details
+        </button>
       </div>
       <div className="top-songs-list-container">
         <div className="song">
