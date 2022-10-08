@@ -1,5 +1,11 @@
 .home-container {
-    margin: auto;
-    width: 90%;
-    margin-bottom: 130px;
+  margin: auto;
+  width: 90%;
+  margin-bottom: 130px;
+}
+
+.home-content-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 150px;
 }

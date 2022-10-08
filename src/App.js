@@ -12,8 +12,8 @@ import Recent from "./components/Recent/Recent";
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-      <MobileHeader />
+      <Header />
+      {/* <MobileHeader /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
