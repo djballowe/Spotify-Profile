@@ -6,6 +6,7 @@
   background-color: black;
   @include flex-center();
   justify-content: space-between;
+  display: none;
   .nav-mobiles {
     position: relative;
     padding: 20px;

@@ -12,7 +12,7 @@ import Recent from "./components/Recent/Recent";
 function App() {
   return (
     <div className="App">
-      {/* <MobileHeader /> */}
+      <MobileHeader />
       <div className="main-container">
         <Header />
         <Routes>

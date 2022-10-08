@@ -83,6 +83,20 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 800px) {
+  .header-container {
+    display: none;
+  }
+  .main-container {
+    display: block !important;
+  }
+  .mobile-nav-container {
+    display: flex !important;
+  }
+  .top-songs-title {
+    margin-top: 0px;
+  }
+}
 .mobile-nav-container {
   z-index: 100;
   width: 100vw;
@@ -92,6 +106,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: none;
 }
 .mobile-nav-container .nav-mobiles {
   position: relative;
