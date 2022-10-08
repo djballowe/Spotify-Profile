@@ -89,6 +89,9 @@
 .mobile-nav-container .nav-mobiles p {
   font-size: 0.8rem;
 }
+.mobile-nav-container .nav-mobiles a {
+  color: rgb(164, 164, 164);
+}
 
 .highlight {
   position: absolute;
@@ -385,7 +388,7 @@
 .recent-tracks-title {
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 body {

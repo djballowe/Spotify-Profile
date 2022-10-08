@@ -13,6 +13,9 @@
     p {
       font-size: 0.8rem;
     }
+    a {
+      color: rgb(164, 164, 164);
+    }
     @include flex-column();
     align-items: center;
   }
