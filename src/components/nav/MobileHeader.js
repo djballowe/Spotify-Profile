@@ -5,6 +5,8 @@ import Artist from "@mdi/react";
 import { mdiAccountMusicOutline } from "@mdi/js";
 import List from "@mdi/react";
 import { mdiPlaylistMusicOutline } from "@mdi/js";
+import Clock from "@mdi/react";
+import { mdiClockOutline } from "@mdi/js";
 
 const MobileHeader = () => {
   return (
@@ -21,6 +23,10 @@ const MobileHeader = () => {
       <div className="nav-mobiles">
         <List path={mdiPlaylistMusicOutline} size={1.4} />
         <p>Top Tracks</p>
+      </div>
+      <div className="nav-mobiles">
+        <List path={mdiClockOutline} size={1.4} />
+        <p>Recent</p>
       </div>
     </div>
   );

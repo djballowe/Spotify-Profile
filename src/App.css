@@ -376,6 +376,18 @@
   color: rgb(113, 113, 113);
 }
 
+.recent-tracks-container {
+  margin: auto;
+  width: 90%;
+  color: white;
+}
+
+.recent-tracks-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
 body {
   background-color: rgb(33, 33, 33);
   font-family: "Inter Tight", sans-serif;

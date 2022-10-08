@@ -8,6 +8,7 @@ import Home from "./components/Home/Home";
 import TopArtists from "./components/Top Artists/TopArtists";
 import TopTracks from "./components/Top Tracks/TopTracks";
 import TrackDetails from "./components/Details/TrackDetails";
+import Recent from "./components/Recent/Recent";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <Home /> */}
       {/* <TopArtists /> */}
       {/* <TopTracks /> */}
-      <TrackDetails />
+      {/* <TrackDetails /> */}
+      <Recent />
     </div>
   );
 }
