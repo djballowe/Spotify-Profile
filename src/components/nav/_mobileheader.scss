@@ -1,15 +1,15 @@
 .mobile-nav-container {
   z-index: 100;
-  width: calc(100vw - 40px);
+  width: 100vw;
   bottom: 0;
   position: fixed;
   background-color: black;
-  padding: 20px;
   @include flex-center();
   justify-content: space-between;
-  color: rgb(164, 164, 164);
+  display: none;
   .nav-mobiles {
     position: relative;
+    padding: 20px;
     p {
       font-size: 0.8rem;
     }
@@ -21,8 +21,8 @@
 .highlight {
   position: absolute;
   top: 0;
-  left: 0;
   background-color: $green;
-  width: 75px;
+  width: 100%;
   height: 5px;
+  transition: all 0.3s ease-in-out;
 }

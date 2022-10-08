@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <Profile />
-      <div>
+      <div className="home-content-container">
         <Artists />
         <Songs />
       </div>

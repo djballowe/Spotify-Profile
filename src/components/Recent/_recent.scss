@@ -2,10 +2,12 @@
   margin: auto;
   width: 90%;
   color: white;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .recent-tracks-title {
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 50px;
+  margin-top: 70px;
 }

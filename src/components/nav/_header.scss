@@ -1,26 +1,55 @@
 .header-container {
   @include flex-column();
   align-items: center;
-  padding: 40px 0;
   img {
     height: auto;
     width: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
-  width: 130px;
   height: 100vh;
   background-color: black;
-  position: fixed;
 }
 
 .nav-links {
-  color: rgb(201, 201, 201);
+  @include flex-column();
+  justify-content: space-around;
+  height: 100vh;
   li {
+    position: relative;
     @include flex-column();
     align-items: center;
+    justify-content: center;
     font-size: 1rem;
     font-weight: 600;
-    margin: 30px 0;
     cursor: pointer;
+    width: 150px;
+    height: 90px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.highlight-desktop {
+  height: 100%;
+  width: 5px;
+  right: 0;
+  background-color: $green;
+  position: absolute;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .header-container {
+    display: none;
+  }
+  .main-container {
+    display: block !important;
+  }
+  .mobile-nav-container {
+    display: flex !important;
+  }
+  .top-songs-title {
+    margin-top: 0px;
   }
 }

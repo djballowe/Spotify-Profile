@@ -59,6 +59,97 @@ const Recent = () => {
             <p>3:02</p>
           </div>
         </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
+        <div className="song">
+          <div className="song-details-container">
+            {/* <img src="" alt="" /> */}
+            <div className="album-cover"></div>
+            <div className="song-details">
+              <p>Song Title</p>
+              <p>Artist</p>
+            </div>
+          </div>
+          <div className="time">
+            <p>3:02</p>
+          </div>
+        </div>
       </div>
     </div>
   );
