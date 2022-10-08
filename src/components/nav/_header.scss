@@ -1,16 +1,15 @@
 .header-container {
   @include flex-column();
   align-items: center;
-  padding: 40px 0;
   img {
     height: auto;
     width: 70px;
     margin-bottom: 60px;
+    margin-top: 60px;
   }
   width: 130px;
   height: 100vh;
   background-color: black;
-  position: fixed;
 }
 
 .nav-links {
@@ -23,4 +22,9 @@
     margin: 30px 0;
     cursor: pointer;
   }
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
 }

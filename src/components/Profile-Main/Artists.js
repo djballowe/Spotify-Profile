@@ -42,6 +42,56 @@ const Artists = () => {
           <div className="artist-pic"></div>
           <p>Artist Name</p>
         </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
+        <div className="artist">
+          {/* <img src="" alt="" /> */}
+          <div className="artist-pic"></div>
+          <p>Artist Name</p>
+        </div>
       </div>
     </div>
   );

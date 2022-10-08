@@ -12,16 +12,18 @@ import Recent from "./components/Recent/Recent";
 function App() {
   return (
     <div className="App">
-      <Header />
       {/* <MobileHeader /> */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/artists" element={<TopArtists />} />
-        <Route path="/tracks" element={<TopTracks />} />
-        <Route path="/track/:id" element={<TrackDetails />} />
-        <Route path="/recent" element={<Recent />} />
-      </Routes>
+      <div className="main-container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/artists" element={<TopArtists />} />
+          <Route path="/tracks" element={<TopTracks />} />
+          <Route path="/track/:id" element={<TrackDetails />} />
+          <Route path="/recent" element={<Recent />} />
+        </Routes>
+      </div>
     </div>
   );
 }

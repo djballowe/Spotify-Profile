@@ -1,5 +1,4 @@
 .profile-info-container {
-
   @include flex-column();
   align-items: center;
   p {
@@ -8,6 +7,7 @@
 }
 
 .main-info {
+  margin-top: 50px;
   @include flex-column();
   align-items: center;
   text-align: center;
