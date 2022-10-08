@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Home from "@mdi/react";
 import { mdiHomeVariantOutline } from "@mdi/js";
@@ -18,13 +18,23 @@ const MobileHeader = () => {
     setPage(location);
   };
 
+  useEffect(() => {
+    highlightPage();
+  });
+
   return (
     <div className="mobile-nav-container">
-      <div className="nav-mobiles">
+      <div
+        className="nav-mobiles"
+        style={{
+          color: page === "/" ? "white" : "rgb(164, 164, 164)",
+        }}
+      >
         <div
           className="highlight"
           style={{
             visibility: page === "/" ? "visible" : "hidden",
+            opacity: page === "/" ? "1" : "0",
           }}
         ></div>
         <Home
@@ -39,6 +49,9 @@ const MobileHeader = () => {
       </div>
       <div
         className="nav-mobiles"
+        style={{
+          color: page === "/artists" ? "white" : "rgb(164, 164, 164)",
+        }}
         onClick={() => {
           navigate("artists");
           highlightPage();
@@ -48,6 +61,7 @@ const MobileHeader = () => {
           className="highlight"
           style={{
             visibility: page === "/artists" ? "visible" : "hidden",
+            opacity: page === "/artists" ? "1" : "0",
           }}
         ></div>
         <Artist path={mdiAccountMusicOutline} size={1.4} />
@@ -55,6 +69,9 @@ const MobileHeader = () => {
       </div>
       <div
         className="nav-mobiles"
+        style={{
+          color: page === "/tracks" ? "white" : "rgb(164, 164, 164)",
+        }}
         onClick={() => {
           navigate("tracks");
           highlightPage();
@@ -64,6 +81,7 @@ const MobileHeader = () => {
           className="highlight"
           style={{
             visibility: page === "/tracks" ? "visible" : "hidden",
+            opacity: page === "/tracks" ? "1" : "0",
           }}
         ></div>
         <List path={mdiPlaylistMusicOutline} size={1.4} />
@@ -71,6 +89,9 @@ const MobileHeader = () => {
       </div>
       <div
         className="nav-mobiles"
+        style={{
+          color: page === "/recent" ? "white" : "rgb(164, 164, 164)",
+        }}
         onClick={() => {
           navigate("recent");
           highlightPage();
@@ -80,6 +101,7 @@ const MobileHeader = () => {
           className="highlight"
           style={{
             visibility: page === "/recent" ? "visible" : "hidden",
+            opacity: page === "/recent" ? "1" : "0",
           }}
         ></div>
         <Clock path={mdiClockOutline} size={1.4} />
