@@ -8,6 +8,7 @@ import TopArtists from "./components/Top Artists/TopArtists";
 import TopTracks from "./components/Top Tracks/TopTracks";
 import TrackDetails from "./components/Details/TrackDetails";
 import Recent from "./components/Recent/Recent";
+import ArtistDetails from "./components/Details/ArtistDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/artists" element={<TopArtists />} />
+          <Route path='/artists/:id' element={<ArtistDetails />} />
           <Route path="/tracks" element={<TopTracks />} />
           <Route path="/track/:id" element={<TrackDetails />} />
           <Route path="/recent" element={<Recent />} />

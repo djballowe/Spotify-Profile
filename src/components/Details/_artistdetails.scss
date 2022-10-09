@@ -1,0 +1,46 @@
+.artist-detail-container {
+  @include flex-column();
+  align-items: center;
+  height: calc(100vh - 140px);
+  padding: 50px;
+}
+
+.artist-detail-banner {
+  @include flex-column();
+  align-items: center;
+  p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+}
+
+.artist-detail-cover {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.artist-detail-detail-container {
+  display: flex;
+}
+
+.artist-details {
+  margin: 30px 20px;
+  text-align: center;
+  p:first-of-type {
+    color: $word-black;
+  }
+  p:last-of-type {
+    color: $green;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .artist-detail-container {
+    justify-content: center;
+  }
+}

@@ -457,6 +457,54 @@
     height: calc(100vh - 140px);
   }
 }
+.artist-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 140px);
+  padding: 50px;
+}
+
+.artist-detail-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artist-detail-banner p {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.artist-detail-cover {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.artist-detail-detail-container {
+  display: flex;
+}
+
+.artist-details {
+  margin: 30px 20px;
+  text-align: center;
+}
+.artist-details p:first-of-type {
+  color: rgb(113, 113, 113);
+}
+.artist-details p:last-of-type {
+  color: rgb(30, 215, 96);
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .artist-detail-container {
+    justify-content: center;
+  }
+}
 .main-container {
   display: grid;
   grid-template-columns: 150px 1fr;

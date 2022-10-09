@@ -23,6 +23,7 @@ $word-black: rgb(113, 113, 113);
 @import "./components/Top\ Tracks/toptracks";
 @import "./components/Details/trackdetails";
 @import "./components//Recent/recent";
+@import "./components/Details/artistdetails";
 
 .main-container {
   display: grid;
