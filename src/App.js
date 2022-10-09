@@ -15,6 +15,8 @@ const code = new URLSearchParams(window.location.search).get("code");
 
 export const AuthContext = React.createContext();
 
+console.log(code);
+
 function App() {
   return code ? (
     <AuthContext.Provider value={code}>
