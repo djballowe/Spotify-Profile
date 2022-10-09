@@ -1,13 +1,18 @@
 .recent-tracks-container {
-  margin: auto;
-  width: 90%;
+  padding: 75px 100px 0 100px;
   color: white;
-  height: 100vh;
+  height: calc(100vh - 75px);
   overflow: scroll;
 }
 
 .recent-tracks-title {
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+  .recent-tracks-container {
+    padding: 50px;
+    height: calc(100vh - 140px);
+  }
 }

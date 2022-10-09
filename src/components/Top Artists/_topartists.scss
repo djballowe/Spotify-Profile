@@ -1,4 +1,7 @@
 .top-artist-page-container {
+  padding: 75px 100px 0 100px;
+  height: calc(100vh - 75px);
+  overflow: scroll;
   p {
     color: white;
   }
@@ -8,7 +11,7 @@
   @include flex-column();
   align-items: center;
   .top-artist-page-title {
-    margin: 70px 0 30px 0;
+    margin-bottom: 30px;
     font-weight: 600;
     font-size: 2rem;
   }
@@ -37,8 +40,15 @@
     @include flex-column();
     align-items: center;
     p {
-        margin-top: 10px;
-        font-weight: 600;
+      margin-top: 10px;
+      font-weight: 600;
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-artist-page-container {
+    padding: 50px;
+    height: calc(100vh - 140px);
   }
 }

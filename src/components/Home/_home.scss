@@ -1,7 +1,8 @@
 .home-container {
-  margin: auto;
-  width: 90%;
-  height: 100vh;
+  // margin-inline: auto;
+  // width: min(90%, 90rem);
+  padding: 75px 100px 0px 100px;
+  height: calc(100vh - 75px);
   overflow: scroll;
 }
 
@@ -9,4 +10,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 150px;
+}
+
+@media screen and (max-width: 800px) {
+  .home-container {
+    padding: 50px;
+    height: calc(100vh - 140px);
+  }
 }
