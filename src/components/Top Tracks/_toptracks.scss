@@ -1,10 +1,17 @@
 .top-tracks-page-container {
-  margin: auto;
-  width: 90%;
+  padding: 75px 100px 0 100px;
+  height: calc(100vh - 75px);
+  overflow: scroll;
   color: white;
 }
 
 .top-tracks-list {
-    margin-top: 50px;
-    margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .top-tracks-page-container {
+    height: calc(100vh - 140px);
+    padding: 50px 50px 90px 50px;
+  }
 }
