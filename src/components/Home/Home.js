@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
+import { code } from "../../Spotify/SpotifyLogic";
 import Artists from "../Profile-Main/Artists";
 import Profile from "../Profile-Main/Profile";
 import Songs from "../Profile-Main/Songs";
-import { AuthContext } from "../../App";
 import useAuth from "../../hooks/useAuth";
 
 const Home = () => {
-  const codeTest = useContext(AuthContext);
-  const token = useAuth(codeTest);
+  const token = useAuth(code);
+
   console.log(token);
 
   return (

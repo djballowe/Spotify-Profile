@@ -10,33 +10,63 @@ import TopTracks from "./components/Top Tracks/TopTracks";
 import TrackDetails from "./components/Details/TrackDetails";
 import Recent from "./components/Recent/Recent";
 import ArtistDetails from "./components/Details/ArtistDetails";
+import { code } from "./Spotify/SpotifyLogic";
+import useAuth from "./hooks/useAuth"
 
-const code = new URLSearchParams(window.location.search).get("code");
-
-export const AuthContext = React.createContext();
-
-console.log(code);
+// const token = JSON.parse(localStorage.getItem("access_token"));
 
 function App() {
+  let token = useAuth(code);
+
+  console.log(token);
+
   return code ? (
-    <AuthContext.Provider value={code}>
-      <div className="App">
-        <MobileHeader />
-        <div className="main-container">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/artists" element={<TopArtists />} />
-            <Route path="/artists/:id" element={<ArtistDetails />} />
-            <Route path="/tracks" element={<TopTracks />} />
-            <Route path="/track/:id" element={<TrackDetails />} />
-            <Route path="/recent" element={<Recent />} />
-          </Routes>
-        </div>
+    <div className="App">
+      <button
+        onClick={() => {
+          localStorage.clear();
+        }}
+      >
+        Storage
+      </button>
+      <button
+        onClick={() => {
+          console.log(localStorage);
+        }}
+      >
+        Print
+      </button>
+      <MobileHeader />
+      <div className="main-container">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/artists" element={<TopArtists />} />
+          <Route path="/artists/:id" element={<ArtistDetails />} />
+          <Route path="/tracks" element={<TopTracks />} />
+          <Route path="/track/:id" element={<TrackDetails />} />
+          <Route path="/recent" element={<Recent />} />
+        </Routes>
       </div>
-    </AuthContext.Provider>
+    </div>
   ) : (
-    <Login />
+    <div>
+      <button
+        onClick={() => {
+          localStorage.clear();
+        }}
+      >
+        Storage
+      </button>
+      <button
+        onClick={() => {
+          console.log(localStorage);
+        }}
+      >
+        Print
+      </button>
+      <Login />
+    </div>
   );
 }
 

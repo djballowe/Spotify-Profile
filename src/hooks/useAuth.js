@@ -9,6 +9,7 @@ export default function useAuth(code) {
   let navigate = useNavigate();
 
   useEffect(() => {
+    if (localStorage.length) return;
     axios
       .post("http://localhost:8080/login", {
         code,
@@ -25,19 +26,26 @@ export default function useAuth(code) {
 
   useEffect(() => {
     if (!refreshToken || !expiresIn) return;
-    axios
-      .post("http://localhost:8080/refresh", {
-        refreshToken,
-      })
-      .then((res) => {
-        setAccessToken(res.data.accessToken);
-        setRefreshToken(res.data.refreshAccessToken);
-        setExpiresIn(res.data.expiresIn);
-      })
-      .catch(() => {
-        navigate("/");
-      });
+    const interval = setInterval(() => {
+      axios
+        .post("http://localhost:8080/refresh", {
+          refreshToken,
+        })
+        .then((res) => {
+          setAccessToken(res.data.accessToken);
+          setRefreshToken(res.data.refreshAccessToken);
+          setExpiresIn(61);
+        })
+        .catch(() => {
+          navigate("/");
+        });
+    }, (expiresIn - 60) * 1000);
+
+    return () => clearInterval(interval);
   }, [refreshToken, expiresIn]);
 
+  if (accessToken) {
+    localStorage.setItem("access_token", accessToken);
+  }
   return accessToken;
 }

@@ -10,6 +10,8 @@ app.use(bodyParser.json());
 app.post("/refresh", (req, res) => {
   const refreshToken = req.body.refreshToken;
 
+  console.log("Token Refreshed");
+
   const spotifyApi = new SpotifyWebApi({
     clientId: "f63cf053c027456498b653ac3c39465a",
     clientSecret: "057cd493916c48a491dfee97c0df4ed3",
