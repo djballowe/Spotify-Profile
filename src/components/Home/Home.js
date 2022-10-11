@@ -3,12 +3,9 @@ import { code } from "../../Spotify/SpotifyLogic";
 import Artists from "../Profile-Main/Artists";
 import Profile from "../Profile-Main/Profile";
 import Songs from "../Profile-Main/Songs";
-import useAuth from "../../hooks/useAuth";
+import useAuth from "../hooks/useAuth";
 
 const Home = () => {
-  const token = useAuth(code);
-
-  console.log(token);
 
   return (
     <div className="home-container">

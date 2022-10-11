@@ -9,7 +9,6 @@ export default function useAuth(code) {
   let navigate = useNavigate();
 
   useEffect(() => {
-    if (localStorage.length) return;
     axios
       .post("http://localhost:8080/login", {
         code,
@@ -34,7 +33,7 @@ export default function useAuth(code) {
         .then((res) => {
           setAccessToken(res.data.accessToken);
           setRefreshToken(res.data.refreshAccessToken);
-          setExpiresIn(61);
+          setExpiresIn(res.data.expiresIn);
         })
         .catch(() => {
           navigate("/");
@@ -46,6 +45,6 @@ export default function useAuth(code) {
 
   if (accessToken) {
     localStorage.setItem("access_token", accessToken);
+    return accessToken;
   }
-  return accessToken;
 }

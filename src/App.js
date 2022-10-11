@@ -11,13 +11,12 @@ import TrackDetails from "./components/Details/TrackDetails";
 import Recent from "./components/Recent/Recent";
 import ArtistDetails from "./components/Details/ArtistDetails";
 import { code } from "./Spotify/SpotifyLogic";
-import useAuth from "./hooks/useAuth"
+import useAuth from "./components/hooks/useAuth";
 
 // const token = JSON.parse(localStorage.getItem("access_token"));
 
-function App() {
-  let token = useAuth(code);
-
+const App = () => {
+  const token = localStorage.getItem("access_token");
   console.log(token);
 
   return code ? (
@@ -27,7 +26,7 @@ function App() {
           localStorage.clear();
         }}
       >
-        Storage
+        Delete
       </button>
       <button
         onClick={() => {
@@ -68,6 +67,6 @@ function App() {
       <Login />
     </div>
   );
-}
+};
 
 export default App;
