@@ -3,6 +3,7 @@
   align-items: center;
   height: 50vh;
   justify-content: center;
+  height: 100vh;
   p {
     color: white;
     font-size: 3.1rem;
@@ -13,7 +14,7 @@
     height: auto;
     width: 20%;
   }
-  button {
+  a {
     padding: 13px 0;
     font-size: 1.3rem;
     background-color: rgba(30, 215, 96, 255);
@@ -23,6 +24,8 @@
     color: white;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
   }
 }
 
