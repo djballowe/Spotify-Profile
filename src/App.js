@@ -16,6 +16,7 @@ import useAuth from "./components/hooks/useAuth";
 // const token = JSON.parse(localStorage.getItem("access_token"));
 
 const App = () => {
+  useAuth(code);
   const token = localStorage.getItem("access_token");
   console.log(token);
 
